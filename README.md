@@ -19,6 +19,8 @@ For creators, this means less stitching, fewer repeated generations, and more co
 
 ## What Is Seedance 2.5?
 
+![seedance-2-5](/seedance-2-5.jpg)
+
 Seedance 2.5 is a new AI video model from ByteDance. It is designed to create longer videos with better control and stronger consistency.
 
 Compared with Seedance 2.0, Seedance 2.5 focuses more on real production workflows. It is not only about making a short AI clip. It is about helping users create a full video scene with characters, products, motion, sound, and camera direction.
@@ -43,7 +45,9 @@ It is expected to become available in early July 2026. At the time of writing, S
 
 SeeGen AI will add Seedance 2.5 once the model becomes available.
 
-For now, users can still create videos with Seedance 2.0 and Seedance 2.0 Mini on SeeGen AI.
+For now, users can still create videos with [Seedance 2.0 and Seedance 2.0 Mini](https://seegen.ai/?utm_source=github) on SeeGen AI or [Dreamina Capcut](https://dreamina.capcut.com/?utm_source=github)
+
+Note: Dreamina is the official Seedance website, but it does not support real human reference materials. SeeGen is a third-party website, and it supports real human references.
 
 ---
 
@@ -53,8 +57,26 @@ Seedance 2.5 is not publicly available yet, so most creators cannot test it dire
 
 For now, the best way to learn about Seedance 2.5 is to watch official previews, conference clips, or trusted demo videos from the Volcano Engine FORCE conference.
 
+Demo 1:
 
-[Watch the Seedance 2.5 Demo on YouTube](https://www.youtube.com/watch?v=srSS9TIhvK0)
+<video src="https://github.com/user-attachments/assets/056d771f-7eec-4144-94a3-0d428234e29c
+" controls width="800"></video>
+
+Demo 2:
+
+<video src="https://github.com/user-attachments/assets/6ce0b5a9-0b4a-428a-a7ad-2d3557c884d5
+" controls width="800"></video>
+
+Demo 3:
+
+<video src="https://github.com/user-attachments/assets/ac20f3b9-c864-4b13-a951-5e36b2404a8d
+" controls width="800"></video>
+
+Demo 4:
+
+<video src="https://github.com/user-attachments/assets/52ed9ba1-368c-4ffd-9333-59849201b766
+" controls width="800"></video>
+
 
 While waiting for Seedance 2.5, you can still create AI videos with Seedance 2.0 and Seedance 2.0 Mini.
 
