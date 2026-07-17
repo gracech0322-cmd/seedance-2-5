@@ -41,13 +41,13 @@ This makes it useful for:
 
 Seedance 2.5 was introduced on June 23, 2026, during the Volcano Engine FORCE conference.
 
-The release time has now been confirmed: Seedance 2.5 is scheduled to launch on **July 16, 2026, at 11:00 PM Beijing Time**.
+The release time has now been confirmed: Seedance 2.5 is scheduled to launch on **July 20, 2026, at 11:00 PM Beijing Time**.
 
 For global users, this is:
 
-- **July 16, 2026, 3:00 PM UTC**
-- **July 16, 2026, 11:00 AM Eastern Time**
-- **July 16, 2026, 8:00 AM Pacific Time**
+- **July 20, 2026, 3:00 PM UTC**
+- **July 20, 2026, 11:00 AM Eastern Time**
+- **July 20, 2026, 8:00 AM Pacific Time**
 
 For now, users can still create videos with [Seedance 2.0 and Seedance 2.0 Mini](https://seegen.ai/?utm_source=github) on SeeGen AI or [Dreamina Capcut](https://dreamina.capcut.com/?utm_source=github)
 
