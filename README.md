@@ -2,7 +2,7 @@
 
 This repository collects Seedance 2.5 resources for creators and developers: prompt notes, video examples, API tutorials, and workflow tips.
 
-Use it if you want to create AI videos with Seedance 2.5, write better prompts, or connect Seedance 2.5 to your own app.
+Use it if you want to create AI videos with [Seedance 2.5](https://seegen.ai/seedance-2-5/), write better prompts, or connect Seedance 2.5 to your own app.
 
 ## What you'll find
 
@@ -17,7 +17,7 @@ Use it if you want to create AI videos with Seedance 2.5, write better prompts, 
 
 ## What is Seedance 2.5?
 
-Seedance 2.5 is the latest AI video generation model in ByteDance's Seedance family.
+Seedance 2.5 is the latest AI video generation model in [ByteDance's](https://en.wikipedia.org/wiki/ByteDance) Seedance family.
 
 Compared with Seedance 2.0, it supports longer videos, more reference inputs, better consistency, and more flexible audio workflows.
 
