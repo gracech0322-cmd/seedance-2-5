@@ -48,7 +48,7 @@ The main changes are longer video duration, more reference files, and standalone
 | Total reference files | Up to 12 | Up to 50 |
 | Character consistency | Good | Improved |
 | Language support | 8+ languages | 10+ languages |
-| Native output | 480p / 720p / 1080p | 480p / 720p / 1080p |
+| Native output | 480p / 720p / 1080p / 4K | 480p / 720p / 1080p |
 
 For creators and developers, the practical difference is control. Seedance 2.5 gives you more room to keep characters, scenes, and audio consistent across longer videos.
 
