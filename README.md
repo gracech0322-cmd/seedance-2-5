@@ -1,21 +1,22 @@
-# Seedance 2.5 AI video generation guide: prompts, examples, and API
+# Seedance 2.5 AI video generation guide: prompts, examples, and API (Updated: Sep 7, 2026)
 
 This repository collects Seedance 2.5 resources for creators and developers: prompt notes, video examples, API tutorials, and workflow tips.
 
-Use it if you want to create AI videos with [Seedance 2.5](https://seegen.ai/seedance-2-5/), write better prompts, or connect Seedance 2.5 to your own app.
+Use it if you want to create AI videos with [Seedance 2.5](https://seegen.ai/seedance-2-5/?utm_source=gtsd25), write better prompts, or connect Seedance 2.5 to your own app.
 
 ## What you'll find
 
-- What is Seedance 2.5
-- Seedance 2.5 vs Seedance 2.0
-- How to try Seedance 2.5 free
-- How to Write a Good Seedance 2.5 prompt
-- Seedance 2.5 examples by use case
-- Seedance 2.5 API providers comparison
-- Seedance 2.5 API integration: a few differences I noticed from Seedance 2.0
-- Developer resources
+- 🎬 [What is Seedance 2.5?](#what-is-seedance-25)
+- 🆚 [Seedance 2.5 vs Seedance 2.0](#seedance-25-vs-seedance-20)
+- 🎁 [How to try Seedance 2.5 for free](how-to-try-seedance-25-for-free)
+- 💡 [Seedance 2.5 prompt examples by use case](#seedance-25-prompt-examples-by-use-case)
+- ✍️ [How to write a good Seedance 2.5 prompt](#how-to-write-a-good-seedance-25-prompt)
+- 🔌 [Seedance 2.5 API providers comparison](#seedance-25-api-providers-comparison)
+- 🧩 [Seedance 2.5 API integration: differences from Seedance 2.0](#seedance-25-api-integration-a-few-differences-i-noticed-from-seedance-20)
 
 ## What is Seedance 2.5?
+
+![seedance25](seedance-2-5.jpg)
 
 Seedance 2.5 is the latest AI video generation model in [ByteDance's](https://en.wikipedia.org/wiki/ByteDance) Seedance family.
 
@@ -39,14 +40,14 @@ The main changes are longer video duration, more reference files, and standalone
 
 | Feature | Seedance 2.0 | Seedance 2.5 |
 |---|---|---|
-| Maximum duration | 15s | 30s |
+| Maximum duration | 15 seconds | 30 seconds |
 | Versions | Fast / Pro / Mini | Pro only |
 | Image references | Up to 9 | Up to 30 |
 | Video references | Up to 3 | Up to 10 |
 | Audio references | Up to 3 (requires image/video) | Up to 10 |
 | Standalone audio reference | No | Yes |
 | Total reference files | Up to 12 | Up to 50 |
-| Character consistency | Good | Improved |
+| Character consistency | Good | Improved for longer scenes |
 | Language support | 8+ languages | 10+ languages |
 | Native output | 480p / 720p / 1080p / 4K | 480p / 720p / 1080p |
 
@@ -63,7 +64,7 @@ I found two platforms that currently let new users try Seedance 2.5 with free cr
 
 ### 1. SeeGen AI
 
-SeeGen AI gives new users free credits after they create an account and join the SeeGen AI Discord community.
+[SeeGen AI](https://seegen.ai/?utm_source=gtsd25) gives new users free credits after they create an account and join the SeeGen AI Discord community.
 
 Steps:
 
@@ -76,12 +77,96 @@ In my test, the free credits were enough for a 480p, 5-second Seedance 2.5 video
 
 ### 2. WaveSpeed AI
 
-WaveSpeed AI gives new users $1 in free credit.
+[WaveSpeed AI](https://wavespeed/?utm_source=gtsd25) gives new users $1 in free credit.
 
 That credit can be used to test Seedance 2.5 generation, including a 480p, 5-second video.
 
 Free credit rules can change, so check each platform before testing.
 
+## Seedance 2.5 prompt examples by use case
+Browse examples across cinematic shots, action and sports, stories and dialogue, product ads, music and dance, nature and travel, and visual effects. Each example includes the final video, references, prompt, and source so you can see how the instructions translate into motion.
+
+### 1.Cinematic Shots
+
+#### 1.1 FPV Drone Flight Through a Mountain Valley
+
+A single-take flight that climbs beside a waterfall, dives toward a river, passes over a village, and flies through a mountain gap.
+
+**Target duration:** 25 seconds. Set the duration in the generation controls.
+
+| Final Video | References | Prompt | Source |
+| --- | --- | --- | --- |
+| <video src="https://github.com/user-attachments/assets/431d19a9-5253-436c-8b08-34821fe90a64" controls width="300"></video> | ![Reference image](sd25-reference-images/drone-pov-reference-image.jpg) | <details><summary>View prompt</summary><pre><code>**Goal:** A first-person FPV racing-drone flight through a mountain valley in one continuous, uncut take. Cinematic live-action look, clear blue skies, natural sunlight, and realistic atmospheric perspective.<br><br>**Camera:** Face the direction of travel, pitching with climbs and dives and banking slightly through turns. Convey speed through passing terrain and subtle inertial sway.<br><br>**Route:** Lower-left green hillside → waterfall crest → waterfall base → stone village → V-shaped mountain gap → open valley beyond. Follow this order without backtracking.<br><br>**Climb:** Start low over the green hillside in the lower-left part of the valley. Accelerate uphill toward the large waterfall on the left. Climb beside its left cliff wall, then curve toward the crest. Pitch downward to reveal the upstream stream and the waterfall's edge.<br><br>**Dive:** Pass the crest and pitch into a steep forward dive alongside the cliff beside the waterfall. Skim the outer edge of the spray without entering the water curtain or dense mist. Pull out just above the river at the base.<br><br>**Village pass:** Bank right and follow the winding river in smooth curves. Fly fast and low over the rooftops of the stone village in the middle of the valley.<br><br>**Mountain gap:** Continue farther right along the river valley toward the two tallest distant peaks. Fly through the exact center of the V-shaped gap between them. Emerge into the open valley and settle into smooth forward flight.<br><br>**Continuity:** Keep terrain, weather, and sunlight consistent. Connect all movements without cuts. No backward flight, retracing, aimless circling, hovering, black frames, time jumps, or sped-up jump cuts. Do not display text, route lines, labels, or numbers.</code></pre></details> | Volcengine |
+
+### 2.Action & Sports
+
+#### 2.1 Zane's Electric Superhero Origin
+
+A ten-panel superhero story follows Zane from a lightning strike to his first rescue, with cartoon action and a soundscape for each scene.
+
+<!-- Replace the video and storyboard placeholder links with your actual URLs. The prompt below is reproduced as provided. -->
+
+| Final Video | References | Prompt | Source |
+| --- | --- | --- | --- |
+| <video src="https://github.com/user-attachments/assets/c2ff9e4c-db6a-416e-933b-3e517cec6c24" controls width="300"></video> |![Zane](sd25-reference-images/zane.png) | <details><summary>View prompt</summary><pre><code>CONTENT ADVISORY: Family friendly Pixar superhero origin story. Stylized cartoon action only. Safe for all audiences. Similar to The Incredibles and Spider-Man Into the Spider-Verse.<br><br>This storyboard has 10 numbered panels. Animate each panel as a separate video clip in sequence. Elements On — include realistic ambient sounds for each panel.<br><br>**Panel 1:** ZANE walks down rainy city street, camera slowly pushes in from behind, rain falling softly, city sounds — traffic, distant music, wet footsteps on pavement, warm orange city glow reflecting in puddles, completely ordinary peaceful moment. 3 second hold. Eye level wide shot slow dolly in. Sound: rain, city traffic, footsteps.<br><br>**Panel 2:** Camera locks as storm clouds spiral overhead impossibly fast, green purple lightning crackling between clouds, ZANE looks up slowly jaw dropping, crowd begins running in panic around him, wind picking up dramatically, ZANE completely still fascinated. 3 second hold. Low angle looking up. Sound: thunder building, wind howling, crowd panic.<br><br>**Panel 3:** Massive lightning bolt strikes ZANE, camera freeze frame at impact, electric cocoon wraps entire body, every raindrop frozen mid-air, city goes dark from power surge, shockwave ripples outward from impact point, complete silence for 1 second then massive thunderclap. Extreme wide shot maximum VFX slow motion. Sound: deafening thunderclap, electrical crackling, city power cutting out.<br><br>**Panel 4:** ZANE on hands and knees, smoke rising from hoodie, looks at own hands crackling with blue electricity, rain hissing on glowing skin, eyes wide with shock and wonder. Extremely slow push in toward crackling hands. Sound: electricity crackling, rain hissing on hot skin, ZANE breathing heavily.<br><br>**Panel 5:** Electricity flows across entire body like second skin, eyes glow solid blue, rain evaporating before touching him, dry circle forming around him on wet pavement, he raises one hand slowly watching lightning dance on fingers. Static locked shot 3 seconds. Sound: continuous electric hum, rain evaporating sizzle, wind stopping around him.<br><br>**Panel 6:** Accidental sneeze triggers massive shockwave explosion outward, bicycle launches into air, trash cans fly backward, streetlights explode in sparks, car alarms trigger everywhere, ZANE horrified hands over mouth. Wide shot shockwave radiating outward. Sound: massive boom, car alarms, shattering glass, objects crashing, ZANE yelping in surprise.<br><br>**Panel 7:** ZANE sprints at full speed, electric trail burning behind him, runs up building wall three steps then falls back confused, cartoon shocked expression mid-air. Dynamic tracking shot maximum speed. Sound: electric whoosh, rapid footsteps, wall impact, ZANE surprised yell.<br><br>**Panel 8:** ZANE floating above city, electricity forming energy wings, legs cycling in panic, looks down at tiny city far below, panic and excitement simultaneously on face. Low angle looking up at floating ZANE. Sound: electric energy hum, wind at height, ZANE panicked laughing.<br><br>**Panel 9:** ZANE dives at full speed catches balloon, lands in hero three-point stance, shockwave from landing, looks up at little girl with biggest gap-tooth smile, hands her balloon, electricity still softly crackling. Medium wide shot warm golden light. Sound: whoosh of dive, heroic landing impact, little girl giggling, soft electric hum.<br><br>**Panel 10:** ZANE stands on rooftop at sunrise, city glowing below, electricity calm and controlled at fingertips, wind catching torn hoodie, gap-tooth smile at horizon, most epic moment. Slow camera pull back from close-up to wide reveal. 5 second hold. Sound: gentle electric hum, wind, birds waking up, distant city waking, triumphant subtle music swell.<br><br>Elements On — include full ambient soundscape for every panel. Subject stays in frame, consistent character, no face morphing, Pixar 3D animation style, exaggerated cartoon physics, smooth motion, no jump cuts, bold saturated colors, electric blue VFX throughout, 24fps, cinematic color grade, 4K resolution. Style reference: The Incredibles, Spider-Man Into the Spider-Verse, Big Hero 6.</code></pre></details> | [@Viniai_ on X](https://x.com/Viniai_/status/2094674143988105403) |
+
+### 3.Stories & Dialogue
+
+#### 3.1 A Pug Ruins Gopal's Park Date
+
+A mischievous pug steals Gopal's toupee during a quiet park date, leading to a short chase and a final comic defeat.
+
+| Final Video | References | Prompt | Source |
+| --- | --- | --- | --- |
+| <video src="https://github.com/user-attachments/assets/b9d5419c-6400-42f4-bba0-4efd325f84a6" controls width="300"></video> | None. Text-to-video. | <details><summary>View prompt</summary><pre><code>CHARACTERS: Gopal is a man with a neat moustache, a formal suit, and a glossy dark toupee covering a smooth bald scalp. Ladoo is a small pug with short, detailed fur, round features, and expressive eyes. The woman is slim and young, with curly black hair, large round sunglasses, and a yellow sundress. STYLE: Polished 3D feature animation with rounded character shapes, soft subsurface skin, detailed pug fur, cheerful park colors, and shallow depth of field in close-ups. Use expressive studio-animation acting and exaggerated but clear cartoon physics. Not photorealistic and not 2D. LIGHTING: Warm midday sunlight with soft shadows and gentle light reflected from the grass. BEAT 1, THE DATE (00:00-00:01.8) Medium shot, locked camera with a subtle push-in. Gopal leans across a cafe table toward the woman with a confident smile. His toupee gleams in the sunlight. In a warm, slightly nasal Indian accent, he says, "I didn't see you." Ladoo appears as a small figure on the lawn behind them. The woman listens with her mouth closed. BEAT 2, THE PLAN (00:01.8-00:02.4) Locked close-up of Ladoo. His eyes widen with a sneaky look, and one ear twitches. BEAT 3, THE SNATCH (00:02.4-00:04.8) Medium-wide shot with a slight pan following Ladoo. The pug sprints into the scene and leaps, snatching the toupee cleanly from Gopal's head and revealing his smooth bald scalp. Gopal jumps up, puts both hands on his head, and shouts, "Hey!" The woman freezes with her drink halfway to her mouth. BEAT 4, THE CHASE (00:04.8-00:07.3) Wide shot with a tracking pan to the right. Ladoo races across the lawn with the toupee flapping in his mouth and clears a wooden bench in one jump. Gopal chases him and shouts, "Come back!" He tries to vault the bench but tumbles over it and lands on the grass. BEAT 5, THE PLEA (00:07.3-00:10.5) Low-angle medium shot with a locked camera. Ladoo stops beside a green trash bin with the toupee hanging from his mouth. Gopal crawls toward him on his hands and knees, reaches out, and whispers, "Gotcha." Ladoo takes one step back while keeping the toupee in his mouth. BEAT 6, DEFEAT (00:10.5-00:13.5) Locked medium-wide shot. Gopal sits slumped on the park bench, still bald, holding a sandwich that he does not eat. He stares at Ladoo, who stands beside the trash bin with the toupee still in his mouth. The music falls into a quiet comic pause. BEAT 7, THE DROP (00:13.5-00:18.0) Locked medium shot. Gopal points at Ladoo and asks, "You remember that?" Ladoo tilts his head over the trash bin and drops the toupee inside with a soft thud. The toupee remains inside the bin and is no longer in Ladoo's mouth. Gopal throws both hands out and says, "Are you serious?" The woman laughs off-screen. Hold on Gopal's despairing face as the music ends with a comic sting. AUDIO Use a cheerful orchestral comedy score throughout. Reduce it to a sparse pause during Beat 6 and end with a short sting. Include birds in Beat 1, quick paw sounds and heavy footsteps during the chase, a body thud when Gopal falls, Gopal's panting, one bark from Ladoo, the soft thud of the toupee landing in the bin, and the woman's off-screen laugh. No narration. DIALOGUE Use only the written English lines. Match Gopal's lip movement to each line. His voice is warm, slightly nasal, Indian-accented, and comic, rising to a squeak in despair. Other characters keep their mouths closed while he speaks. CONTINUITY Keep Gopal's face, moustache, suit, body proportions, and bald scalp consistent. Keep the detached toupee's shape and color unchanged after Ladoo takes it. Keep Ladoo's appearance and the park layout consistent across every beat. No face changes, on-screen text, captions, branding, or watermark.</code></pre></details> | [Original post / Creator](https://x.com/Viniai_/status/2096504592456663392?s=20) |
+
+
+### 4.Product & Ads
+
+#### 4.1 A Grapefruit Ad That Turns a Desert into a Juice Ocean
+
+A thirsty fennec fox bites into a grapefruit and floods the desert with juice. What starts as a survival scene ends as a summer vacation.
+
+<!-- Replace the placeholder links with your actual URLs. -->
+
+| Final Video | References | Prompt | Source |
+| --- | --- | --- | --- |
+| <video src="https://github.com/user-attachments/assets/26d5ace2-e000-442a-885b-d671270ed169" controls width="300"></video> | ![Reference image](sd25-reference-images/3d-ads-reference-image.png) | <details><summary>View prompt</summary><pre><code>**Visual style:** A polished 3D animated commercial with bright, clear colors. Make the fruit pulp and juice look refreshing and give the juice bursts a strong sense of impact. Mix high-end commercial animation with playful absurdity. The fennec fox is cute, expressive, and lively. Use @Image1 as the reference for the character and visual treatment: soft natural light, detailed fur and skin textures, and a miniature-world feel that blends realism with whimsy.<br><br>**0–3s:** A desert under a blazing sun. Heat distorts the air, sand dunes ripple into the distance, and the horizon seems to smoke. A fennec fox lies flat on the scorching sand, its tongue trembling and eyes unfocused. It looks almost dried out. Its long ears droop as though the whole fox is about to evaporate. Sound: labored breathing and faint, exaggerated dry cracking.<br><br>**3–6s:** The fox freezes and twitches its nose. It looks down and discovers an ice-cold grapefruit half-buried in the sand, its peel covered with water droplets. The fruit gleams in the sunlight, with detailed skin texture, like a miracle in the desert. The fox's eyes widen as if it has found its last hope. Sound: a bright discovery ding.<br><br>**6–8s:** The fox lunges toward the grapefruit and hugs it with both paws, pressing its whole face against the peel. Its expression says, “I'm saved.” Freeze the image for one second to create an exaggerated, funny advertising beat. Sound: a soft thump, followed by half a second of silence.<br><br>**8–11s:** The fox bites into the grapefruit. The peel splits, revealing plump, translucent pulp gleaming inside. Instead of trickling out, the juice erupts like a fountain. Sound: a crisp crunch followed by an exaggerated burst of juice.<br><br>**11–16s:** Clear, luminous pink grapefruit juice gushes down the dunes and floods the desert. Dry yellow sand becomes a cool, sparkling pink ocean that feels fresh and fruity. Cacti, rocks, and small dunes disappear beneath the juice. Keep the scene exaggerated and dreamlike. The fox is excited at first, then realizes something is wrong. Its delight turns to shock and fear.<br><br>**16–20s:** Almost submerged in the grapefruit ocean, the fox grabs half a grapefruit like a life ring and floats on the surface. Soaked, it pokes its head out with a bewildered expression. Sunlight glitters across the pink waves. Sound: frantic splashing and waves, with a comic tone.<br><br>**20–23s:** Cut to a white screen. Center the brand name and slogan: “Seedance Grapefruit. Bite into the fruit. Let summer pour out.” A narrator reads the complete line aloud. Sound: a clean, refreshing brand chime.<br><br>**23–29s:** Cut back from the white screen. The fox now lounges on the floating grapefruit, wearing small sunglasses and holding a drink with a straw. It drifts across the juice ocean as though on vacation. Pink fruit pulp, small ice cubes, and splashes float nearby beneath a clear blue sky. The mood shifts from survival to relaxation. The fox stretches out on the grapefruit with a satisfied look. Pull the camera back and freeze on a bright, refreshing, playful summer scene. Sound: relaxed summer music and gently lapping waves.<br><br>**Text:** Apart from the slogan on the white end card, keep on-screen text limited to the brand name. Do not add extra captions.</code></pre></details> | Volcengine |
+
+### 5.Music & Dance
+
+#### 5.1 WANDER: A Desert Adventure Music Video
+
+A traveler drives, camps, and hikes through the desert, with electronic music carrying the journey from golden hour to sunrise.
+
+<!-- Replace the final video placeholder with your actual URL. -->
+
+| Final Video | References | Prompt | Source |
+| --- | --- | --- | --- |
+| <video src="https://github.com/user-attachments/assets/466b5751-f6d2-4231-802f-2021954908e2" controls width="300"></video> | None. Text-to-video. | <details><summary>View prompt</summary><pre><code>Create a photorealistic cinematic adventure music video following a young traveler through the desert at night and sunrise. Maintain the same face, hair, skin tone, and proportions throughout. Keep the character visually consistent in every shot.<br><br>**Opening:** At golden hour, the traveler drives an old vintage 4x4 across a vast desert highway, wearing a black oversized jacket, white T-shirt, and dark jeans. Show close-ups of hands on the steering wheel, sunlight passing across the windshield, dust rising behind the vehicle, and wide cinematic shots of endless sand dunes.<br><br>**Night campsite:** Hard cut to night. The traveler sets up a small campsite beneath a vast star-filled sky. Show a glowing campfire, boots walking across the sand, sparks floating upward, and the traveler sitting beside the fire while looking toward the stars.<br><br>**Canyon:** Cut to a desert canyon at first light. The traveler hikes through towering red-rock formations, climbs over rocky terrain, and pauses at a high viewpoint overlooking the landscape.<br><br>**Sand dunes:** Hard cut to the traveler running down a steep dune, laughing naturally, spinning in the wind, and watching a distant 4x4 drive across the horizon. Capture realistic wind movement in the clothing and hair.<br><br>**Sunrise road:** Cut to a remote desert road during sunrise. The traveler stands beside the vehicle as the first sunlight illuminates the mountains. Include quick atmospheric shots of tire tracks, desert plants, dust particles, distant birds, rock formations, and sunlight moving across the landscape.<br><br>**Final sequence:** The traveler drives toward the sunrise on an empty road. The camera slowly pulls back into an expansive aerial-style landscape shot as the vehicle becomes tiny against the desert. End with a bold cinematic white title reading “WANDER” over the final sunrise shot.<br><br>**Style:** Premium cinematic adventure music video, photorealistic live-action, 35mm/50mm cinematic lens look, subtle film grain, natural skin texture, realistic hair and fabric movement, handheld camera mixed with smooth tracking shots, dramatic golden-hour lighting, deep blue night tones, realistic firelight, atmospheric dust, natural motion blur, realistic depth of field, 24fps, hard cuts only.<br><br>**Audio:** Energetic cinematic electronic music with atmospheric percussion, deep bass, and subtle acoustic textures. Mix naturally with engine sounds, desert wind, footsteps, fire crackling, and environmental ambience. No dialogue.<br><br>**Avoid:** CGI appearance, plastic skin, identity drift, face changes, distorted anatomy, extra limbs, warped vehicles, impossible landscapes, artificial-looking fire, subtitles, logos, or watermarks. No text other than the final “WANDER” title.</code></pre></details> | [@ZaraIrahh on X](https://x.com/ZaraIrahh/status/2095736444245479557) |
+
+
+### 6.Nature & Travel
+
+#### 6.1 A 1990s NYC Christmas Parade
+
+A nostalgic New York Christmas parade told through quick cuts of balloons, marching bands, and bundled-up spectators, with a 35mm film look and VHS texture.
+
+| Final Video | References | Prompt | Source |
+| --- | --- | --- | --- |
+| <video src="https://github.com/user-attachments/assets/cd2074d9-9331-49d9-a5d4-b2651e987eee" controls width="300"></video> | None. Text-to-video. | <details><summary>View prompt</summary><pre><code>A fast-paced, 20-second montage of a 1990s New York City Christmas parade. Shot on 35mm film with vintage VHS grain and warm, nostalgic Kodak-style lighting. Cut to a new shot every second.<br><br>**0–1s:** Extreme close-up of the bell of a vintage gold trumpet as it plays. Streamers fly past the lens.<br><br>**1–2s:** Low-angle wide shot of a giant retro Captain Underpants balloon drifting between red-brick buildings.<br><br>**2–3s:** Medium shot of a girl in a red 1990s puffer jacket clapping with excitement.<br><br>**3–4s:** Low-angle tracking shot of a Christmas marching band in red uniforms stepping past.<br><br>**4–5s:** Close-up of a child sitting on their father's shoulders, pointing at the sky in wonder.<br><br>**5–6s:** First-person view looking down over a snow-covered street packed with cheering crowds.<br><br>**6–7s:** Quick zoom toward a giant gingerbread-man balloon passing overhead.<br><br>**7–8s:** Close-up of a freshly ejected Polaroid photo as a parade scene gradually develops on it.<br><br>**8–9s:** Medium close-up of three young friends in vintage 1990s outfits, laughing and waving at the parade.<br><br>**9–10s:** High-angle shot of streamers falling like snow onto the parade floats below.<br><br>**10–11s:** Close-up of an old handheld camcorder recording the parade, with a 1990s-style display frame.<br><br>**11–12s:** A quick whip pan reveals a Christmas elf performer on stilts tossing candy to the crowd.<br><br>**12–13s:** Low-angle shot of a giant reindeer balloon towering against the overcast sky.<br><br>**13–14s:** Close-up of colorful Christmas lights blinking around a snow-covered streetlamp. Snowflakes land on the lights and melt.<br><br>**14–15s:** Close-up of wool-gloved hands dropping marshmallows into a steaming cup of hot cocoa.<br><br>**15–16s:** Over-the-shoulder shot of a couple holding hands as an ornate Christmas float passes.<br><br>**16–17s:** Moving tracking shot of a vintage toy-train float rolling down the center of the street.<br><br>**17–18s:** Close-up of a little girl hugging a vintage teddy bear, with light from the falling streamers reflected in her eyes.<br><br>**18–19s:** Low-angle medium shot of a giant snowman balloon gently “waving” to cheering spectators on both sides of the street.<br><br>**19–20s:** Wide finale shot of Santa waving from his sleigh float as colorful streamers and snow fill the air.<br><br>Maintain the 1990s film aesthetic throughout, with energetic quick cuts and fluid transitions between shots.</code></pre></details> | [@SeeGen_Official on X](https://x.com/SeeGen_Official/status/2084945937869516834) |
+
+### 7.VFX & Transformations
+
+#### 7.1 Aging from 20 to 80
+
+A woman ages from 20 to 80 in one continuous shot while the reference video's framing, lighting, and performance timing stay the same.
+
+<!-- Replace the placeholder links with your actual URLs. -->
+
+| Final Video | References | Prompt | Source |
+| --- | --- | --- | --- |
+| <video src="https://github.com/user-attachments/assets/57554700-d614-42d5-b7f4-e369f7305b9f" controls width="300"></video> | <video src="https://github.com/user-attachments/assets/475e8972-be1e-4fc4-9516-97bc4235b10e" controls width="300"></video>| <details><summary>View prompt</summary><pre><code>Preserve the composition, camera position, lighting, and performance timing of @Video1. Change only the woman's appearance and expression.<br><br>Let her age naturally from 20 to 80. Fine lines around her eyes slowly deepen, a tear slides past the corner of her eye, and the corners of her mouth lift slightly before settling into a faint smile.<br><br>Keep the entire sequence in one continuous shot, with no cuts or flashes. Maintain the alignment of her facial features throughout, without drifting or distortion.</code></pre></details> | Volcengine |
 
 ## How to write a good Seedance 2.5 prompt
 
@@ -189,82 +274,6 @@ Before submitting a Seedance 2.5 prompt, check:
 - Are duration, resolution, and aspect ratio handled outside the prompt?
 - If the video is long, is it split into stages?
 - If there is camera movement, does it have a target and direction?
-
-## Seedance 2.5 prompt examples by use case
-Browse examples across cinematic shots, action and sports, stories and dialogue, product ads, music and dance, nature and travel, and visual effects. Each example includes the final video, references, prompt, and source so you can see how the instructions translate into motion.
-
-### 1.Cinematic Shots
-
-#### 1.1 FPV Drone Flight Through a Mountain Valley
-
-A single-take flight that climbs beside a waterfall, dives toward a river, passes over a village, and flies through a mountain gap.
-
-**Target duration:** 25 seconds. Set the duration in the generation controls.
-
-| Final Video | References | Prompt | Source |
-| --- | --- | --- | --- |
-| <video src="https://github.com/user-attachments/assets/431d19a9-5253-436c-8b08-34821fe90a64" controls width="300"></video> | ![Reference image](sd25-reference-images/drone-pov-reference-image.jpg) | <details><summary>View prompt</summary><pre><code>**Goal:** A first-person FPV racing-drone flight through a mountain valley in one continuous, uncut take. Cinematic live-action look, clear blue skies, natural sunlight, and realistic atmospheric perspective.<br><br>**Camera:** Face the direction of travel, pitching with climbs and dives and banking slightly through turns. Convey speed through passing terrain and subtle inertial sway.<br><br>**Route:** Lower-left green hillside → waterfall crest → waterfall base → stone village → V-shaped mountain gap → open valley beyond. Follow this order without backtracking.<br><br>**Climb:** Start low over the green hillside in the lower-left part of the valley. Accelerate uphill toward the large waterfall on the left. Climb beside its left cliff wall, then curve toward the crest. Pitch downward to reveal the upstream stream and the waterfall's edge.<br><br>**Dive:** Pass the crest and pitch into a steep forward dive alongside the cliff beside the waterfall. Skim the outer edge of the spray without entering the water curtain or dense mist. Pull out just above the river at the base.<br><br>**Village pass:** Bank right and follow the winding river in smooth curves. Fly fast and low over the rooftops of the stone village in the middle of the valley.<br><br>**Mountain gap:** Continue farther right along the river valley toward the two tallest distant peaks. Fly through the exact center of the V-shaped gap between them. Emerge into the open valley and settle into smooth forward flight.<br><br>**Continuity:** Keep terrain, weather, and sunlight consistent. Connect all movements without cuts. No backward flight, retracing, aimless circling, hovering, black frames, time jumps, or sped-up jump cuts. Do not display text, route lines, labels, or numbers.</code></pre></details> | Volcengine |
-
-### 2.Action & Sports
-
-#### 2.1 Zane's Electric Superhero Origin
-
-A ten-panel superhero story follows Zane from a lightning strike to his first rescue, with cartoon action and a soundscape for each scene.
-
-<!-- Replace the video and storyboard placeholder links with your actual URLs. The prompt below is reproduced as provided. -->
-
-| Final Video | References | Prompt | Source |
-| --- | --- | --- | --- |
-| <video src="https://github.com/user-attachments/assets/c2ff9e4c-db6a-416e-933b-3e517cec6c24" controls width="300"></video> |![Zane](sd25-reference-images/zane.png) | <details><summary>View prompt</summary><pre><code>CONTENT ADVISORY: Family friendly Pixar superhero origin story. Stylized cartoon action only. Safe for all audiences. Similar to The Incredibles and Spider-Man Into the Spider-Verse.<br><br>This storyboard has 10 numbered panels. Animate each panel as a separate video clip in sequence. Elements On — include realistic ambient sounds for each panel.<br><br>**Panel 1:** ZANE walks down rainy city street, camera slowly pushes in from behind, rain falling softly, city sounds — traffic, distant music, wet footsteps on pavement, warm orange city glow reflecting in puddles, completely ordinary peaceful moment. 3 second hold. Eye level wide shot slow dolly in. Sound: rain, city traffic, footsteps.<br><br>**Panel 2:** Camera locks as storm clouds spiral overhead impossibly fast, green purple lightning crackling between clouds, ZANE looks up slowly jaw dropping, crowd begins running in panic around him, wind picking up dramatically, ZANE completely still fascinated. 3 second hold. Low angle looking up. Sound: thunder building, wind howling, crowd panic.<br><br>**Panel 3:** Massive lightning bolt strikes ZANE, camera freeze frame at impact, electric cocoon wraps entire body, every raindrop frozen mid-air, city goes dark from power surge, shockwave ripples outward from impact point, complete silence for 1 second then massive thunderclap. Extreme wide shot maximum VFX slow motion. Sound: deafening thunderclap, electrical crackling, city power cutting out.<br><br>**Panel 4:** ZANE on hands and knees, smoke rising from hoodie, looks at own hands crackling with blue electricity, rain hissing on glowing skin, eyes wide with shock and wonder. Extremely slow push in toward crackling hands. Sound: electricity crackling, rain hissing on hot skin, ZANE breathing heavily.<br><br>**Panel 5:** Electricity flows across entire body like second skin, eyes glow solid blue, rain evaporating before touching him, dry circle forming around him on wet pavement, he raises one hand slowly watching lightning dance on fingers. Static locked shot 3 seconds. Sound: continuous electric hum, rain evaporating sizzle, wind stopping around him.<br><br>**Panel 6:** Accidental sneeze triggers massive shockwave explosion outward, bicycle launches into air, trash cans fly backward, streetlights explode in sparks, car alarms trigger everywhere, ZANE horrified hands over mouth. Wide shot shockwave radiating outward. Sound: massive boom, car alarms, shattering glass, objects crashing, ZANE yelping in surprise.<br><br>**Panel 7:** ZANE sprints at full speed, electric trail burning behind him, runs up building wall three steps then falls back confused, cartoon shocked expression mid-air. Dynamic tracking shot maximum speed. Sound: electric whoosh, rapid footsteps, wall impact, ZANE surprised yell.<br><br>**Panel 8:** ZANE floating above city, electricity forming energy wings, legs cycling in panic, looks down at tiny city far below, panic and excitement simultaneously on face. Low angle looking up at floating ZANE. Sound: electric energy hum, wind at height, ZANE panicked laughing.<br><br>**Panel 9:** ZANE dives at full speed catches balloon, lands in hero three-point stance, shockwave from landing, looks up at little girl with biggest gap-tooth smile, hands her balloon, electricity still softly crackling. Medium wide shot warm golden light. Sound: whoosh of dive, heroic landing impact, little girl giggling, soft electric hum.<br><br>**Panel 10:** ZANE stands on rooftop at sunrise, city glowing below, electricity calm and controlled at fingertips, wind catching torn hoodie, gap-tooth smile at horizon, most epic moment. Slow camera pull back from close-up to wide reveal. 5 second hold. Sound: gentle electric hum, wind, birds waking up, distant city waking, triumphant subtle music swell.<br><br>Elements On — include full ambient soundscape for every panel. Subject stays in frame, consistent character, no face morphing, Pixar 3D animation style, exaggerated cartoon physics, smooth motion, no jump cuts, bold saturated colors, electric blue VFX throughout, 24fps, cinematic color grade, 4K resolution. Style reference: The Incredibles, Spider-Man Into the Spider-Verse, Big Hero 6.</code></pre></details> | [@Viniai_ on X](https://x.com/Viniai_/status/2094674143988105403) |
-
-### 3.Stories & Dialogue
-
-### 4.Product & Ads
-
-#### 4.1 A Grapefruit Ad That Turns a Desert into a Juice Ocean
-
-A thirsty fennec fox bites into a grapefruit and floods the desert with juice. What starts as a survival scene ends as a summer vacation.
-
-<!-- Replace the placeholder links with your actual URLs. -->
-
-| Final Video | References | Prompt | Source |
-| --- | --- | --- | --- |
-| <video src="https://github.com/user-attachments/assets/26d5ace2-e000-442a-885b-d671270ed169" controls width="300"></video> | ![Reference image](sd25-reference-images/3d-ads-reference-image.png) | <details><summary>View prompt</summary><pre><code>**Visual style:** A polished 3D animated commercial with bright, clear colors. Make the fruit pulp and juice look refreshing and give the juice bursts a strong sense of impact. Mix high-end commercial animation with playful absurdity. The fennec fox is cute, expressive, and lively. Use @Image1 as the reference for the character and visual treatment: soft natural light, detailed fur and skin textures, and a miniature-world feel that blends realism with whimsy.<br><br>**0–3s:** A desert under a blazing sun. Heat distorts the air, sand dunes ripple into the distance, and the horizon seems to smoke. A fennec fox lies flat on the scorching sand, its tongue trembling and eyes unfocused. It looks almost dried out. Its long ears droop as though the whole fox is about to evaporate. Sound: labored breathing and faint, exaggerated dry cracking.<br><br>**3–6s:** The fox freezes and twitches its nose. It looks down and discovers an ice-cold grapefruit half-buried in the sand, its peel covered with water droplets. The fruit gleams in the sunlight, with detailed skin texture, like a miracle in the desert. The fox's eyes widen as if it has found its last hope. Sound: a bright discovery ding.<br><br>**6–8s:** The fox lunges toward the grapefruit and hugs it with both paws, pressing its whole face against the peel. Its expression says, “I'm saved.” Freeze the image for one second to create an exaggerated, funny advertising beat. Sound: a soft thump, followed by half a second of silence.<br><br>**8–11s:** The fox bites into the grapefruit. The peel splits, revealing plump, translucent pulp gleaming inside. Instead of trickling out, the juice erupts like a fountain. Sound: a crisp crunch followed by an exaggerated burst of juice.<br><br>**11–16s:** Clear, luminous pink grapefruit juice gushes down the dunes and floods the desert. Dry yellow sand becomes a cool, sparkling pink ocean that feels fresh and fruity. Cacti, rocks, and small dunes disappear beneath the juice. Keep the scene exaggerated and dreamlike. The fox is excited at first, then realizes something is wrong. Its delight turns to shock and fear.<br><br>**16–20s:** Almost submerged in the grapefruit ocean, the fox grabs half a grapefruit like a life ring and floats on the surface. Soaked, it pokes its head out with a bewildered expression. Sunlight glitters across the pink waves. Sound: frantic splashing and waves, with a comic tone.<br><br>**20–23s:** Cut to a white screen. Center the brand name and slogan: “Seedance Grapefruit. Bite into the fruit. Let summer pour out.” A narrator reads the complete line aloud. Sound: a clean, refreshing brand chime.<br><br>**23–29s:** Cut back from the white screen. The fox now lounges on the floating grapefruit, wearing small sunglasses and holding a drink with a straw. It drifts across the juice ocean as though on vacation. Pink fruit pulp, small ice cubes, and splashes float nearby beneath a clear blue sky. The mood shifts from survival to relaxation. The fox stretches out on the grapefruit with a satisfied look. Pull the camera back and freeze on a bright, refreshing, playful summer scene. Sound: relaxed summer music and gently lapping waves.<br><br>**Text:** Apart from the slogan on the white end card, keep on-screen text limited to the brand name. Do not add extra captions.</code></pre></details> | Volcengine |
-
-### 5.Music & Dance
-
-#### 5.1 WANDER: A Desert Adventure Music Video
-
-A traveler drives, camps, and hikes through the desert, with electronic music carrying the journey from golden hour to sunrise.
-
-<!-- Replace the final video placeholder with your actual URL. -->
-
-| Final Video | References | Prompt | Source |
-| --- | --- | --- | --- |
-| <video src="Final URL" controls width="300"></video> | None. Text-to-video. | Create a photorealistic cinematic adventure music video following a young traveler through the desert at night and sunrise. Maintain the same face, hair, skin tone, and proportions throughout. Keep the character visually consistent in every shot.<br><br>**Opening:** At golden hour, the traveler drives an old vintage 4x4 across a vast desert highway, wearing a black oversized jacket, white T-shirt, and dark jeans. Show close-ups of hands on the steering wheel, sunlight passing across the windshield, dust rising behind the vehicle, and wide cinematic shots of endless sand dunes.<br><br>**Night campsite:** Hard cut to night. The traveler sets up a small campsite beneath a vast star-filled sky. Show a glowing campfire, boots walking across the sand, sparks floating upward, and the traveler sitting beside the fire while looking toward the stars.<br><br>**Canyon:** Cut to a desert canyon at first light. The traveler hikes through towering red-rock formations, climbs over rocky terrain, and pauses at a high viewpoint overlooking the landscape.<br><br>**Sand dunes:** Hard cut to the traveler running down a steep dune, laughing naturally, spinning in the wind, and watching a distant 4x4 drive across the horizon. Capture realistic wind movement in the clothing and hair.<br><br>**Sunrise road:** Cut to a remote desert road during sunrise. The traveler stands beside the vehicle as the first sunlight illuminates the mountains. Include quick atmospheric shots of tire tracks, desert plants, dust particles, distant birds, rock formations, and sunlight moving across the landscape.<br><br>**Final sequence:** The traveler drives toward the sunrise on an empty road. The camera slowly pulls back into an expansive aerial-style landscape shot as the vehicle becomes tiny against the desert. End with a bold cinematic white title reading “WANDER” over the final sunrise shot.<br><br>**Style:** Premium cinematic adventure music video, photorealistic live-action, 35mm/50mm cinematic lens look, subtle film grain, natural skin texture, realistic hair and fabric movement, handheld camera mixed with smooth tracking shots, dramatic golden-hour lighting, deep blue night tones, realistic firelight, atmospheric dust, natural motion blur, realistic depth of field, 24fps, hard cuts only.<br><br>**Audio:** Energetic cinematic electronic music with atmospheric percussion, deep bass, and subtle acoustic textures. Mix naturally with engine sounds, desert wind, footsteps, fire crackling, and environmental ambience. No dialogue.<br><br>**Avoid:** CGI appearance, plastic skin, identity drift, face changes, distorted anatomy, extra limbs, warped vehicles, impossible landscapes, artificial-looking fire, subtitles, logos, or watermarks. No text other than the final “WANDER” title. | [@ZaraIrahh on X](https://x.com/ZaraIrahh/status/2095736444245479557) |
-
-
-### 6.Nature & Travel
-
-#### 6.1 A 1990s NYC Christmas Parade
-
-A nostalgic New York Christmas parade told through quick cuts of balloons, marching bands, and bundled-up spectators, with a 35mm film look and VHS texture.
-
-| Final Video | References | Prompt | Source |
-| --- | --- | --- | --- |
-| <video src="Final URL" controls width="300"></video> | None. Text-to-video. | A fast-paced, 20-second montage of a 1990s New York City Christmas parade. Shot on 35mm film with vintage VHS grain and warm, nostalgic Kodak-style lighting. Cut to a new shot every second.<br><br>**0–1s:** Extreme close-up of the bell of a vintage gold trumpet as it plays. Streamers fly past the lens.<br><br>**1–2s:** Low-angle wide shot of a giant retro Captain Underpants balloon drifting between red-brick buildings.<br><br>**2–3s:** Medium shot of a girl in a red 1990s puffer jacket clapping with excitement.<br><br>**3–4s:** Low-angle tracking shot of a Christmas marching band in red uniforms stepping past.<br><br>**4–5s:** Close-up of a child sitting on their father's shoulders, pointing at the sky in wonder.<br><br>**5–6s:** First-person view looking down over a snow-covered street packed with cheering crowds.<br><br>**6–7s:** Quick zoom toward a giant gingerbread-man balloon passing overhead.<br><br>**7–8s:** Close-up of a freshly ejected Polaroid photo as a parade scene gradually develops on it.<br><br>**8–9s:** Medium close-up of three young friends in vintage 1990s outfits, laughing and waving at the parade.<br><br>**9–10s:** High-angle shot of streamers falling like snow onto the parade floats below.<br><br>**10–11s:** Close-up of an old handheld camcorder recording the parade, with a 1990s-style display frame.<br><br>**11–12s:** A quick whip pan reveals a Christmas elf performer on stilts tossing candy to the crowd.<br><br>**12–13s:** Low-angle shot of a giant reindeer balloon towering against the overcast sky.<br><br>**13–14s:** Close-up of colorful Christmas lights blinking around a snow-covered streetlamp. Snowflakes land on the lights and melt.<br><br>**14–15s:** Close-up of wool-gloved hands dropping marshmallows into a steaming cup of hot cocoa.<br><br>**15–16s:** Over-the-shoulder shot of a couple holding hands as an ornate Christmas float passes.<br><br>**16–17s:** Moving tracking shot of a vintage toy-train float rolling down the center of the street.<br><br>**17–18s:** Close-up of a little girl hugging a vintage teddy bear, with light from the falling streamers reflected in her eyes.<br><br>**18–19s:** Low-angle medium shot of a giant snowman balloon gently “waving” to cheering spectators on both sides of the street.<br><br>**19–20s:** Wide finale shot of Santa waving from his sleigh float as colorful streamers and snow fill the air.<br><br>Maintain the 1990s film aesthetic throughout, with energetic quick cuts and fluid transitions between shots. | [@SeeGen_Official on X](https://x.com/SeeGen_Official/status/2084945937869516834) |
-
-### 7.VFX & Transformations
-
-#### 7.1 Aging from 20 to 80
-
-A woman ages from 20 to 80 in one continuous shot while the reference video's framing, lighting, and performance timing stay the same.
-
-<!-- Replace the placeholder links with your actual URLs. -->
-
-| Final Video | References | Prompt | Source |
-| --- | --- | --- | --- |
-| <video src="https://github.com/user-attachments/assets/57554700-d614-42d5-b7f4-e369f7305b9f" controls width="300"></video> | <video src="https://github.com/user-attachments/assets/475e8972-be1e-4fc4-9516-97bc4235b10e" controls width="300"></video>| Preserve the composition, camera position, lighting, and performance timing of @Video1. Change only the woman's appearance and expression.<br><br>Let her age naturally from 20 to 80. Fine lines around her eyes slowly deepen, a tear slides past the corner of her eye, and the corners of her mouth lift slightly before settling into a faint smile.<br><br>Keep the entire sequence in one continuous shot, with no cuts or flashes. Maintain the alignment of her facial features throughout, without drifting or distortion. | Volcengine |
 
 
 ## Seedance 2.5 API providers comparison
